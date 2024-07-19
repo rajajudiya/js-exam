@@ -7,8 +7,6 @@ let specilality = documnet.getElementById('specilality');
 // to print data in html table in table body
 let tbody = document.getElementById('View');
 
-let isedit = false;
-let isindex;
 
 const getData = () => {
     let data = JSON.parse(localStorage.getItem('foodDetails'));
