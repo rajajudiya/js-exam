@@ -11,7 +11,7 @@ let isedit = false;
 let isindex;
 
 const getData = () => {
-    let data = JSON.parse(localStorage.getItem('productDetails'));
+    let data = JSON.parse(localStorage.getItem('foodDetails'));
     if (data) {
         return data;
     } else {
@@ -49,7 +49,7 @@ const AddRecipes = () => {
 
     dataDisplay();
 
-    localStorage.setItem('productDetails', JSON.stringify(adds));
+    localStorage.setItem('foodDetails', JSON.stringify(adds));
     dataDisplay();
     fnameInput.value = '';
     priceInput.value = '';
